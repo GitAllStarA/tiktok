@@ -3,16 +3,23 @@
     color: white;
     bottom: 50px;
     display: flex;
-   
+
 
 }
 
+.videoFooter_details{
+    flex: 1;
+    /* padding: 20px; */
+}
+
+/* this is using the spinRecord keyframe and also inverted the color */
 .videoFooter_record{
     animation: spinRecord infinite 5s linear;
     height: 50px;
     filter: invert(1);
 }
 
+/* spin the record at video footer */
 @keyframes spinRecord {
     from {
         transform: rotate(0deg);
