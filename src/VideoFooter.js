@@ -1,9 +1,14 @@
 import React from 'react'
-import './VideoFooter.css'
+import './videoFooter.css'
 function VideoFooter() {
     return (
         <div className="videoFooter">
-            <h1>I am a footer</h1>
+            <div className="videoFooter_details">
+           <h3>Kermitontiktok</h3>
+           <p>this is kermintontiktok</p>
+            </div>
+             <img className="videoFooter_record"
+              src="https://static.thenounproject.com/png/934821-200.png" alt=""/>  
         </div>
     )
 }

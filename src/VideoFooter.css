@@ -1,7 +1,23 @@
 .videoFooter {
     position: relative;
     color: white;
-    top: 150px;
+    bottom: 50px;
+    display: flex;
    
 
+}
+
+.videoFooter_record{
+    animation: spinRecord infinite 5s linear;
+    height: 50px;
+    filter: invert(1);
+}
+
+@keyframes spinRecord {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
