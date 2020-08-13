@@ -1,30 +1,65 @@
+/* whole video footer alignment */
 .videoFooter {
-    position: relative;
-    color: white;
-    bottom: 50px;
-    display: flex;
-
-
+  position: relative;
+  color: #ffffff;
+  bottom: 150px;
+  display: flex;
+  margin-left: 40px;
+}
+/* making the icon position absolute to stay at same position whilst interfering the text */
+.videoFooter_ICon {
+  position: absolute;
 }
 
-.videoFooter_details{
-    flex: 1;
-    /* padding: 20px; */
+/* adding margin and width to the ticker music icon so the text will not mix with it */
+.videoFooter_Ticker .ticker {
+  height: 0;
+  margin-left: 30px;
+  width: 160%;
+}
+/* places the music note icon with padding on top */
+.videoFooter_Ticker {
+  padding-top: 7px;
+}
+
+/* adjusting the space between the h3 by adding padding */
+.videoFooter_details > h3 {
+  padding-bottom: 20px;
+  /* padding: 17px; 
+     height: 15px; */
+}
+
+/* adjusting the space between the p by adding padding */
+.videoFooter_details > p {
+  padding-bottom: 20px;
+  margin-right: 130px;
+  /* padding: 17px; 
+     height: 15px; */
+}
+
+/* by adding the flex 1 it creates a row and pushes the record/disc to right */
+.videoFooter_details {
+  /* flex: 1;  */
+  /* padding: 17px; 
+     height: 15px; */
 }
 
 /* this is using the spinRecord keyframe and also inverted the color */
-.videoFooter_record{
-    animation: spinRecord infinite 5s linear;
-    height: 50px;
-    filter: invert(1);
+.videoFooter_record {
+  animation: spinRecord infinite 5s linear;
+  height: 50px;
+  filter: invert(1);
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
 }
 
 /* spin the record at video footer */
 @keyframes spinRecord {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
