@@ -8,7 +8,7 @@ import db from "./firebase.js";
 function App() {
   const [videos, setVideos] = useState([]);
   useEffect(() => {
-    db.collection("posts").onSnapshot((snapshot) =>
+    db.collection("users").onSnapshot((snapshot) =>
       setVideos(snapshot.docs.map((doc) => doc.data()))
     );
   }, []);
